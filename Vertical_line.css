@@ -1,0 +1,9 @@
+.list::before {
+      position: absolute;
+      background-color: $red-2;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      margin-left: -1.7rem;
+      content: '';
+    }
