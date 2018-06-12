@@ -1,4 +1,19 @@
-.class:after {
+// Div parent
+.class {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+// Color overlay
+.class::after {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -6,8 +21,16 @@
     height: 100%;
     display: block;
     z-index: 1;
-    content: "";
-    opacity: .5;
+    background-color: rgba(0,0,0,.5);
+}
+
+// Text above color
+.class .class-inner {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 
