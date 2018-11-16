@@ -1,0 +1,8 @@
+<form>
+	<label for="playerInput">Select rock/paper/scissors</label>
+	<select id="playerInput" class="select">
+		<option>rock</option>
+		<option>paper</option>
+		<option>scissors</option>
+	</select>
+</form>
